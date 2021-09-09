@@ -1,0 +1,241 @@
+/*
+ Theme Name:   Blocksy dattertema
+ Description:  Dattertema til Blocksy 
+ Author:       Hanna Nodland Aasen, Amalie Bekkevold, Ingrid Flobak, Karoline Grøndal
+ Author URI:   https://itstud.hiof.no/uinv20gr2/
+ Template:     blocksy
+ Text Domain:  blocksy
+*/
+
+/*Meny og søkefelt*/
+#header {
+	position: fixed;
+	right: 0;
+    left: 0;
+}
+
+#header-widget-area {
+	padding: 10px;
+	margin: auto;
+	width: 500px;
+	border-color: #06bffc;
+}
+
+.torgetlogo {
+	padding-top: 10px;
+	padding-right: 5px;
+}
+
+.ct-search-input {
+	border: 1px solid #06bffc;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+/*Sidebar*/
+.dcw-c-title, .dcw-a-title {
+	font-size: 20px;
+}
+
+.dcw {
+	list-style-type: none;
+	font-size: 14px;
+}
+
+.cat-item {
+	list-style-type: none;
+}
+
+#cat {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+li.cat-item a:hover {
+	color: #0063fc;
+}
+
+/*Forsiden*/
+.blocks-gallery-grid {
+	margin: 90px;
+	margin-top: -120px;
+}
+
+.blocks-gallery-item:hover {
+	border: 3px solid;
+	border-color: #0063fc;
+}
+
+
+/*Torget*/
+.bodytorget {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"headline headline sorterannonser"
+		"aside main main";
+	max-width: 80%;
+	margin: auto;
+}
+
+svg {
+	color: #06bffc;
+}
+
+.maintorget {
+	grid-area: main;
+}
+
+.asidetorget {
+	grid-area: aside;
+}
+
+.headlinetorget {
+	grid-area: headline;
+	margin-bottom: 20px;
+}
+
+.sorterannonser {
+	grid-area: sorterannonser;
+	margin-left: 45px;
+}
+
+#selectsorterannonser {
+	width: 200px;
+}
+
+.annonse-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.annonse-item {
+	text-align: center;
+	flex-direction: column;
+	width: 40%;
+	flex: flex-grow;
+	margin: 10px;
+}
+
+.annonse-item:hover {
+	background-color:#f1f9ff;
+}
+
+/*Annonser*/
+.wrapperannonse {
+	margin-top: 70px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"hovedinnhold sidemeny";
+}
+
+.bodyannonse {
+	grid-area: hovedinnhold;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.sidemeny {
+	grid-area: sidemeny;
+	text-align: left;
+}
+
+.tilbakeknapp:hover {
+	text-decoration: underline;
+}
+
+#sendmelding {
+	border: 10x solid #0063fb;
+	background-color: #0063fb;
+	color: white;
+	border-radius: 10px;
+	padding: 15px 50px;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#sendmelding:hover {
+	background-color: blue;
+}
+
+#brukerid {
+	border: 1px solid #E3EBFF;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	width: max-content;
+	padding: 2px 175px 1px 20px;
+	background-color: #E3EBFF;
+	border-radius: 8px;
+}
+
+#navnbruker {
+	font-size: 16px;
+	color: #0063fb;
+}
+
+#finnsiden {
+	font-size: 12px;
+}
+
+#vurdering {
+	margin-bottom: 60px;
+	border: 1px solid #E3EBFF;
+	padding: 2px 60px 1px 20px;
+	background-color: #E3EBFF;
+	width: max-content;
+	border-radius: 8px;
+}
+
+#favoritt {
+	margin-top: 30px;
+	border: 1px solid grey;
+	width: fit-content;
+	border-radius: 5px;
+	padding: 4px 7px;
+	color: #0063fb;
+}
+
+#favoritt:hover {
+	border: 1px solid #0063fb;
+	background-color: #E3EBFF;
+}
+
+.bodyannonse img {
+	height: 350px;
+	width: 400px;
+}
+
+
+/*Kategoriarkiv*/
+.bodyarkiv{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-template-areas:
+		"headline headline sorterannonser"
+		"aside main main";
+	max-width: 80%;
+	margin: auto;
+}
+
+.headlinearkiv {
+	grid-area: headline;
+	margin-bottom: 20px;
+}
+
+.asidearkiv {
+	grid-area: aside;
+}
+
+.mainarkiv {
+	grid-area: main;
+}
+
+/*Søkarkiv og underkategoriarkiv*/
+#sokeresultat {
+	text-align: center;
+}
